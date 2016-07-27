@@ -178,7 +178,7 @@ body {
   }
 }
 
-    .hide-above-768 {
+.hide-above-768 {
    display: inherit; 
 }
 
@@ -192,7 +192,7 @@ body {
    display: inherit; 
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
   .hide-bellow-768 {
     display: none;
     }
