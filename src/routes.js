@@ -55,4 +55,10 @@ app.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: "templates/onas.html"
 	});
 
+	$stateProvider.state('novice',
+	{
+		url: '/novice',
+		templateUrl: "templates/novice.html"
+	});
+
 });

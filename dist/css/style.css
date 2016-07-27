@@ -67,12 +67,12 @@ body {
    margin-bottom: 0px !important;
 }
 .col-sm-12 > h2 { /* the word Panther in the navbar*/ 
-    font-weight: bold;
+    font-weight: 600;
     margin-bottom: 0px;
 }
 
 .navbar-text > .col-sm-11 { /* the sentence martials arts group */
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 /* CUSTOMIZE THE CAROUSEL
@@ -178,15 +178,42 @@ body {
   }
 }
 
-    .hide-bellow-1070 {
-   display: inline; 
+    .hide-above-768 {
+   display: inherit; 
 }
 
-@media (max-width: 1070px) {
-  /* Navbar positioning foo */
-  .hide-bellow-1070 {
+@media (min-width: 768px) {
+  .hide-above-768 {
     display: none;
     }
 }
 
+    .hide-bellow-768 {
+   display: inherit; 
+}
 
+@media (max-width: 769px) {
+  .hide-bellow-768 {
+    display: none;
+    }
+}
+
+/* BRAND banner */
+
+.brand-banner {
+  background-color: black;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #74AE22;
+  font-weight: 400;
+}
+.brand-banner-font {
+  font-size: 2.75em !important;
+  font-weight: 500;
+}
+
+#inline-navbar {
+  margin-bottom: 5px !important;
+  margin-top:10px !important;
+}
