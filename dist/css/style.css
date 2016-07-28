@@ -9,6 +9,24 @@ body {
 }
 
 
+
+/* fonts */
+
+.caption {
+  font-size: 0.7em;
+  text-align: center;
+}
+
+.bold-green-text {
+  font-weight: bold;
+  color: #74AE22;
+}
+
+.page-title {
+  margin-bottom: 20px;
+  color: #74AE22;
+  font-weight: bold !important;
+}
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -217,3 +235,27 @@ body {
   margin-bottom: 5px !important;
   margin-top:10px !important;
 }
+
+
+/* facebook page pugin */
+    .hide-bellow-500 {
+   display: inherit; 
+}
+
+@media (max-width: 500px) {
+  .hide-bellow-500 {
+    display: none;
+    }
+}
+
+/* facebook page pugin */
+    .hide-above-500 {
+   display: inherit; 
+}
+
+@media (min-width: 500px) {
+  .hide-above-500 {
+    display: none;
+    }
+}
+
