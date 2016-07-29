@@ -2,10 +2,30 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html {/* page now always shows a scrollbar */
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal { /* to avoid double scrollbars */
+  overflow: hidden;
+}
+
+
+@font-face {
+    font-family: LiberationMonoBold;
+    src: url(fonts/LiberationMono-Bold.ttf);
+}
+
+@font-face {
+    font-family: LiberationMono;
+    src: url(fonts/LiberationMono-Regular.ttf);
+}
+
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  font-family: sans-serif !important;
+  font-family: sans-serif; !important;
 }
 
 
@@ -224,11 +244,13 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   color: #74AE22;
-  font-weight: 400;
+  font-weight: bold;
+  font-size: 1.1em;
+  font-family: LiberationMono;
+  font-weight: bolder;
 }
 .brand-banner-font {
-  font-size: 2.75em !important;
-  font-weight: 500;
+  font-size: 2.5em !important;
 }
 
 #inline-navbar {

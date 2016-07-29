@@ -62,6 +62,8 @@ gulp.src(['bower_components/**/*.ttf', 'bower_components/**/*.woff'])
 	.pipe(gulp.dest('dist/assets/css/fonts'))
 	.pipe(notify('Moved bower fonts components to dist/assets/fonts'));
 
+
+
 gulp.src(['bower_components/angular-resource/angular-resource.min.js','angular-resource.min.js.map'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
@@ -115,6 +117,16 @@ gulp.src(["./src/**/*.css"])
 .pipe(flatten())
 .pipe(gulp.dest("./dist/css"))
 .pipe(notify("moved css"));
+
+gulp.src(['./src/**/*.ttf', './src/**/*.woff'])
+	.pipe(flatten())
+	.pipe(gulp.dest('./dist/css/fonts'))
+	.pipe(notify('fonts components to dist/css/fonts'));
+
+gulp.src(['./src/images/*.jpg', './src/images/*.png', './src/images/*.gif'])
+	.pipe(flatten())
+	.pipe(gulp.dest('./dist/images'))
+	.pipe(notify('moved pictures to dist/images '));
 
 });
 
