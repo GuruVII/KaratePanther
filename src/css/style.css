@@ -13,19 +13,14 @@ html {/* page now always shows a scrollbar */
 
 
 @font-face {
-    font-family: LiberationMonoBold;
-    src: url(fonts/LiberationMono-Bold.ttf);
-}
-
-@font-face {
-    font-family: LiberationMono;
-    src: url(fonts/LiberationMono-Regular.ttf);
+    font-family: tahoma;
+    src: url(fonts/Tahoma.ttf);
 }
 
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  font-family: sans-serif; !important;
+  font-family: tahoma, sans-serif; !important;
 }
 
 
@@ -75,7 +70,7 @@ body {
 .navbar-wrapper .navbar {
   padding-right: 15px;
   padding-left: 15px;
-  background-color: black;
+  background-color: #040607;
 }
 .navbar-wrapper .navbar .container {
   width: auto;
@@ -239,15 +234,15 @@ body {
 /* BRAND banner */
 
 .brand-banner {
-  background-color: black;
+  background-color: #040607; /*color of the eye isn't perfectly black */
   margin-bottom: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #74AE22;
   font-weight: bold;
-  font-size: 1.1em;
-  font-family: LiberationMono;
-  font-weight: bolder;
+  font-size: 1.2em;
+  font-family: tahoma;
+  letter-spacing:2px;
 }
 .brand-banner-font {
   font-size: 2.5em !important;
@@ -281,3 +276,29 @@ body {
     }
 }
 
+/* side navbar */
+.side-navbar {
+  position:fixed;
+}
+
+.side-navbar-main {
+  padding-left:25px;
+  background: url("../images/bullet1.png") no-repeat scroll 5px 4px transparent;
+}
+
+.side-navbar-main-list {
+  list-style-type: none;
+}
+
+.side-navbar-submenu
+{
+  padding-left:50px;
+  list-style-type: disc;
+}
+
+/* subpages of the club webpage */
+
+#zemljevid {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
