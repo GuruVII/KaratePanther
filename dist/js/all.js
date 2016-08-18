@@ -61,4 +61,40 @@ app.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: "templates/novice.html"
 	});
 
+
+	$stateProvider.state('ljubljanaSub', {
+	  url: '/ljubjana/:scrollTo',  
+	  controller: 'ljubljanaCtrl', 
+	  templateUrl: 'templates/ljubljana.html',
+	});
+
+	$stateProvider.state('medvodeSub', {
+	  url: '/medvode/:scrollTo',  
+	  controller: 'medvodeCtrl', 
+	  templateUrl: 'templates/medvode.html',
+	});
+
+	$stateProvider.state('barjeSub', {
+	  url: '/notranje-gorice/:scrollTo',  
+	  controller: 'barjeCtrl', 
+	  templateUrl: 'templates/barje.html',
+	});
+
+});
+
+
+app.run(function($rootScope, $location, $anchorScroll, $stateParams, $timeout) { //this code allows moving to specfic locations inside the page using ui-routes. source: http://plnkr.co/edit/gAK2thwsEVE0x083tFJf?p=preview
+  $rootScope.$on('$stateChangeSuccess', function(newRoute, oldRoute) {
+    $timeout(function() { 
+      $location.hash($stateParams.scrollTo);
+      $anchorScroll()
+    }, 100)
+  });
+})
+
+app.controller('barjeCtrl', function($scope) {
+});
+app.controller('ljubljanaCtrl', function($scope) {
+});
+app.controller('medvodeCtrl', function($scope) {
 });
