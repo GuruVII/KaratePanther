@@ -23,7 +23,12 @@ body {
   font-family: tahoma, sans-serif; !important;
 }
 
-
+h1 {
+  color: #74AE22;
+}
+h3 {
+  color: #74AE22;
+}
 
 /* fonts */
 
@@ -301,4 +306,8 @@ body {
 #zemljevid {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+
+#facebook-sidebar {
+  margin-top: 50px;
 }
