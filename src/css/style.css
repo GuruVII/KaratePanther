@@ -20,7 +20,7 @@ html {/* page now always shows a scrollbar */
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  font-family: tahoma, sans-serif; !important;
+  font-family: century, sans-serif; !important;
 }
 
 h1 {
@@ -29,6 +29,11 @@ h1 {
 h3 {
   color: #74AE22;
 }
+h5 {
+  color: #74AE22;  
+}
+
+
 
 /* fonts */
 
@@ -47,6 +52,30 @@ h3 {
   color: #74AE22;
   font-weight: bold !important;
 }
+
+a.anchor-link-font {
+color: #5a5a5a !important;
+}
+
+a.anchor-link-font:hover{
+  text-decoration:none !important;
+}
+
+a.sidebar-link-font {
+color: #5a5a5a !important;
+}
+
+a.sideba-link-font:hover{
+  color: #808080 !important;
+}
+.vpis-font-title {
+  margin-top:35px;
+  text-align: center;;
+  color: #74AE22;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
 
@@ -310,4 +339,12 @@ h3 {
 
 #facebook-sidebar {
   margin-top: 50px;
+}
+
+/* custom button */
+
+.btn-custom {
+
+  border-radius: 0px !important;
+
 }

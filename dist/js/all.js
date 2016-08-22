@@ -5,7 +5,7 @@ $('.collapse').collapse('hide');
 $("#navbar").find("li").on("click", function(){
 $("#navbar").find("li").removeClass("active");
 $(this).addClass("active");
-});
+});// finds all children of the #navbar that are in a list, removes active class and adds it to the one you clicked on
 
 app.config(function($stateProvider, $urlRouterProvider){
 
@@ -103,6 +103,7 @@ app.run(function($rootScope, $location, $anchorScroll, $stateParams, $timeout) {
 app.controller('barjeCtrl', function($scope) {
 });
 app.controller('ljubljanaCtrl', function($scope) {
+
 });
 app.controller('medvodeCtrl', function($scope) {
 });

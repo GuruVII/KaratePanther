@@ -1,17 +1,17 @@
 <div class="container" ng-controller="ljubljanaCtrl">
 	<div class="row">
-		<div class="col-xs-11 col-md-2 col-md-push-10">
+		<div class="col-xs-11 col-sm-2 col-md-push-10 col-sm-push-9 hide-bellow-768">
 			<div class="row">
-				<div class="side-navbar"> <!-- must in in sperate div so that the navbar has a fixed positon inside the parent div, which gives it proper position in the webpage-->
+				<div class="side-navbar "> <!-- must in in sperate div so that the navbar has a fixed positon inside the parent div, which gives it proper position in the webpage-->
 					<ul>
-						<li class="side-navbar-main-list"><a href="#/ljubljana" class="side-navbar-main">Karate Šiška</a></li>
+						<li class="side-navbar-main-list"><a ui-sref="ljubljana" class="side-navbar-main sidebar-link-font">Karate Šiška</a></li>
 							<ul class="side-navbar-submenu">
-								<a ui-sref="ljubljanaSub({scrollTo: 'vpis'})"><li>vpis</li></a>
-								<a ui-sref="ljubljanaSub({scrollTo: 'zemljevid'})"><li>zemljevid</li></a>
-								<a ui-sref="ljubljanaSub({scrollTo: 'oKlubu'})"><li>o klubu</li></a>
+								<a class="sidebar-link-font" ui-sref="ljubljanaSub({scrollTo: 'vpis'})"><li>vpis</li></a>
+								<a class="sidebar-link-font" ui-sref="ljubljanaSub({scrollTo: 'zemljevid'})"><li>zemljevid</li></a>
+								<a class="sidebar-link-font" ui-sref="ljubljanaSub({scrollTo: 'oKlubu'})"><li>o klubu</li></a>
 							</ul>
-						<li class="side-navbar-main-list"><a ui-sref="medvode" class="side-navbar-main">Karate Medvode</a></li>
-						<li class="side-navbar-main-list"><a ui-sref="barje" class="side-navbar-main">Karate Notranje Gorice</a></li>
+						<li class="side-navbar-main-list"><a ui-sref="medvode" class="side-navbar-main sidebar-link-font">Karate Medvode</a></li>
+						<li class="side-navbar-main-list"><a ui-sref="barje" class="side-navbar-main sidebar-link-font">Karate Notranje Gorice</a></li>
 					<ul>
 					<div id= "facebook-sidebar" class="row hide-bellow-768">
 						<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Ftestcommunity2321312&tabs=timeline&width=150&height=500&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=180626785330207" width="155" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
@@ -19,14 +19,94 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-8">
+		<div class="col-xs-8 col-sm-7 col-lg-8">
 			<div id="vpis" class="row" >
-KARATE KLUB ŠIŠKA - vpis
- 
+				<div class="col-xs-12"><h3><b>KARATE KLUB ŠIŠKA - vpis</b></h3></div>
+				 
 
-Vadba je v telovadnici DOJO PANTHER, Celovška cesta 264, Ljubljana (blizu Mercator centra Šiška).   → zemljevid lokacije 
+				<div class="col-xs-12">
+					<p>Vadba je v telovadnici <b>DOJO PANTHER</b>, Celovška cesta 264, Ljubljana (blizu Mercator centra Šiška).<br>
+				<a ui-sref="ljubljanaSub({scrollTo: 'zemljevid'})"> → zemljevid lokacije</a><p>	</div>	
+				<div class="row">
+					<div class="col-sm-6 col-sm-offset-3">
+						<p class="vpis-font-title">VPIS
+							<br>
+						 začetni in nadaljevalni tečaj september in oktober 2015</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h5>ZAČETNIKI I.</h5>
+						<b>otroci 5-7 let</b>
+						<br>
+						Prvi trening bo v četrtek 17.9.2015. Vpis bo potekal do konca oktobra 2015.
+						<br>
+						Urnik vadbe: 
+						<ul>
+							<li>četrtek ob 17.30</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h5>ZAČETNIKI II.</h5>
+						<b>otroci 8-10 let</b>
+						<br>
+						Prvi trening bo v četrtek 17.9.2015. Vpis bo potekal do konca oktobra 2015.
+						Urnik vadbe: 
+						<ul>
+							<li>četrtek ob 17.30 </li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h5>ZAČETNIKI III.</h5>
+						<b>otroci nad 10 let, mladi, odrasli in družine</b>
+						<br>
+						Prvi trening bo v sredo 2.9.2015. Vpis bo potekal do konca oktobra 2015.
+						<br>
+						Urnik vadbe:
+						<ul>
+							<li>ponedeljek ob 18.00</li>
+							<li>sreda ob 18.00</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h5>NADALJEVALNA SKUPINA</h5>
+						<b>otroci nad 10 let, mladi, odrasli in družine</b>
+						<br>
+						Prvi trening bo v sredo 2.9.2015. Vpis bo potekal do konca oktobra 2015.
+						<br>
+						Urnik vadbe:
+						<ul>
+							<li>ponedeljek ob 19.30</li>
+							<li>sreda ob 19.30</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<h5>REKREACIJSKA SKUPINA </h5>
+						<b>otroci nad 10 let, mladi, odrasli in družine</b>
+						<br>
+						Prvi trening bo v torek 1.9.2015. Vpis bo potekal do konca oktobra 2015.
+						<br>
+						Urnik vadbe:
+						<ul>
+							<li>torek ob 19.30</li>	
+						</ul>
+					</div>
+				</div>
+
+
+
+
 			</div>
 			<div id="zemljevid" class="row">
+				<h3><b>KARATE KLUB ŠIŠKA - Zemljevid</b></h3>
 				<div class="embed-responsive embed-responsive-16by9 content jumbotron">
 					<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.4339918165517!2d14.476822301693586!3d46.08541406998288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477acd3014dbdc01%3A0x803eedcc679d1e00!2sCelov%C5%A1ka+cesta+264%2C+1000+Ljubljana!5e0!3m2!1ssl!2ssi!4v1471472731281" width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
@@ -39,15 +119,33 @@ Vadba je v telovadnici DOJO PANTHER, Celovška cesta 264, Ljubljana (blizu Merca
 			
 			</div>
 			<div id="oKlubu" class="row" >
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id eros tincidunt massa blandit vestibulum in eleifend velit. Aliquam tincidunt lacinia mattis. Nulla et sollicitudin nulla, sit amet feugiat quam. Praesent ut tellus fringilla, maximus tellus a, congue neque. Maecenas sagittis dui odio. Praesent sagittis, erat non vestibulum interdum, dui neque fermentum tortor, ut dapibus ante metus vitae dui. Praesent mi ex, pretium eget volutpat in, vestibulum eu leo.
-				<br><br>
-				In vel urna at tellus congue malesuada ut id ex. Nulla sit amet mauris eu felis finibus commodo. Cras lobortis lectus sapien, sit amet suscipit magna egestas quis. In hac habitasse platea dictumst. Fusce vitae lectus tellus. Integer in mollis magna, at euismod diam. Vestibulum posuere id enim a euismod. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam et mauris lectus. Vivamus consectetur efficitur vulputate. Proin fringilla rhoncus metus.
-				<br><br>	
-				Praesent cursus bibendum lacinia. Vestibulum imperdiet urna pulvinar condimentum ornare. Sed porta facilisis risus, sed pretium magna gravida id. Sed et ipsum at diam scelerisque pulvinar id vulputate neque. Suspendisse lacinia, libero non ultrices luctus, lacus arcu egestas risus, nec accumsan metus quam non ligula. Duis aliquet facilisis ullamcorper. Suspendisse blandit nisl vel sem ultricies, non laoreet mauris laoreet. Nunc ultricies pretium vehicula.
-				<br><br>
-				Suspendisse potenti. Sed in enim posuere, ultricies ipsum eget, tempus metus. Aenean turpis libero, vestibulum non molestie non, mattis a dolor. Vivamus sit amet diam dolor. Proin eros leo, dignissim eget scelerisque eu, tincidunt quis dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed pharetra blandit nibh vitae malesuada. Quisque quis elementum risus. Nullam maximus, arcu id elementum facilisis, massa ex pulvinar ex, ut commodo erat enim eu mauris. Ut fringilla ligula sed nisl ultricies pellentesque. Proin accumsan malesuada sollicitudin. Phasellus dignissim ipsum vitae nulla faucibus dapibus. Nam at euismod diam, id bibendum eros. Nunc viverra tincidunt posuere. Nulla pellentesque mi accumsan mollis tristique.
-				<br><br>
-				Phasellus dapibus elit in turpis tincidunt tempus. Donec urna dui, volutpat eget dignissim sagittis, accumsan nec massa. Maecenas pharetra risus vitae nisl tristique, at tincidunt augue suscipit. Morbi metus ante, lobortis sit amet tincidunt nec, tincidunt vel enim. Sed efficitur dapibus lacus non sodales. Nam lobortis vitae dolor luctus facilisis. Maecenas tincidunt velit risus, quis gravida nisi auctor in. Phasellus consequat ullamcorper dapibus. 	
+				
+				<h3><b>KARATE KLUB ŠIŠKA - O klubu</b></h3>
+				<div class="col-sm-8 col-xs-6">Prvi začetki kluba segajo v leto <span class="bold-green-text">1978</span>, ko je nastal <span class="bold-green-text">Karate klub Šiška</span>. Prvi trener in ustanovitelj je bil <b>Jani Merc</b>, ki je leta 1977 prevzel vodenje pionirske sekcije DBV Ljubljana v Šiški na Osnovni šoli Riharda Jakopiča, Derčeva ulica 1 (pri Kinu Šiška).
+				<br>
+				<br>
+				Konec sedemdesetih let je postal karate zelo popularna veščina zaradi Bruce Lee-ja, njegove filme so takrat predvajali v Sloveniji. Tako so se poleg otrok začeli vpisovati tudi odrasli. Po enem letu dela v sekciji, je le-ta prerasla v klub. Ime je dobil po občini v kateri je deloval - Karate klub Šiška. Občasno je klub gostoval na skoraj vsaki osnovni šoli, ki obstaja na tem območju.
+				<br>
+				<br>
+				Klub je imel v času nekdanje skupne države Jugoslavije veliko članov iz katerih je prišlo tudi veliko <b>državnih prvakov</b>. Konec osemdesetih let je bil celo eden najmočnejših klubov v Sloveniji. Bil je tudi prvi klub, ki je v letih <b>1984-90 razvil napredne tehnike športne borbe</b>. K temu je v glavnem pripomoglo sodelovanje med našim učiteljem Janijem Mercem in, takrat najbolj naprednim ter v svetu cenjenim trenerjem Jugoslovanske reprezentance, <b>Dušanom Dačićem</b>.
+				</div>
+				<div class="col-sm-4 col-xs-6">
+					<div class="row">
+						<div class="col-xs-9">
+						<img src="images/KKS1.jpg" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<p class="caption">ustanovitelj in trener Karate kluba Šiška
+							<br>
+							Jani Merc s svojim učencem
+							<br>
+							prva generacije leta 1977
+							</p>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
