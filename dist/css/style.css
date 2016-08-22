@@ -11,6 +11,11 @@ html {/* page now always shows a scrollbar */
   overflow: hidden;
 }
 
+footer {
+  border-top: 1px solid lightgrey;
+  margin-top: 50px;
+  padding-top: 15px;
+}
 
 @font-face {
     font-family: tahoma;
@@ -20,7 +25,7 @@ html {/* page now always shows a scrollbar */
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
-  font-family: century, sans-serif; !important;
+  font-family: century, sans-serif !important;
 }
 
 h1 {
@@ -32,7 +37,6 @@ h3 {
 h5 {
   color: #74AE22;  
 }
-
 
 
 /* fonts */
