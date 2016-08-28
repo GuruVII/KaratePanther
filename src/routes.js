@@ -49,10 +49,15 @@ app.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: "templates/medvode.html"
 	});
     
-    $stateProvider.state('onas',
+    $stateProvider.state('klub',
 	{
-		url: '/onas',
-		templateUrl: "templates/onas.html"
+		url: '/klub',
+		templateUrl: "templates/klub.html"
+	});
+	$stateProvider.state('karate',
+	{
+		url: '/karate',
+		templateUrl: "templates/karate.html"
 	});
 
 	$stateProvider.state('novice',
@@ -80,6 +85,21 @@ app.config(function($stateProvider, $urlRouterProvider){
 	  templateUrl: 'templates/barje.html',
 	});
 
+	$stateProvider.state('treningSub', {
+	  url: '/index/:scrollTo',  
+	  controller: 'mainCtrl', 
+	  templateUrl: 'templates/home.html',
+	});
+	$stateProvider.state('klubSub', {
+	  url: '/klub/:scrollTo',  
+	  controller: 'klubCtrl', 
+	  templateUrl: 'templates/klub.html',
+	});
+	$stateProvider.state('karateSub', {
+	  url: '/karate/:scrollTo',  
+	  controller: 'karateCtrl', 
+	  templateUrl: 'templates/karate.html',
+	});
 });
 
 

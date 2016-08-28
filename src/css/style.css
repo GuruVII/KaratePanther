@@ -28,15 +28,6 @@ body {
   font-family: sans-serif !important;
 }
 
-h1 {
-  color: #74AE22;
-}
-h3 {
-  color: #74AE22;
-}
-h5 {
-  color: #74AE22;  
-}
 
 
 /* fonts */
@@ -44,6 +35,10 @@ h5 {
 .caption {
   font-size: 0.7em;
   text-align: center;
+}
+
+.green-text {
+  color: #74AE22 !important;  
 }
 
 .bold-green-text {
@@ -66,11 +61,11 @@ a.anchor-link-font:hover{
 }
 
 a.sidebar-link-font {
-color: #5a5a5a !important;
+color: #74AE22 !important;
 }
 
-a.sideba-link-font:hover{
-  color: #808080 !important;
+a.sidebar-link-font:hover{
+  color: #63951d !important;
 }
 .vpis-font-title {
   margin-top:35px;
@@ -80,10 +75,40 @@ a.sideba-link-font:hover{
   font-size: 1.5em;
 }
 
+
+div.jumbotron-title-font {
+  text-align: center;
+  
+}
+
 .jumbotron-main-font {
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.6em;
+  
 }
+
+p.jumbotron-main-font {
+margin-bottom: 17px;
+}
+
+.jumbotron-leftSide-font {
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: bold;
+
+}
+
+p.jumbotron-leftSide-font {
+    margin-bottom: 5px;
+}
+
+h3.jumbotron-rightSide-font {
+    color: #5a5a5a;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -278,9 +303,8 @@ a.sideba-link-font:hover{
 
 .brand-banner {
   background-color: #040607; /*color of the eye isn't perfectly black */
-  margin-bottom: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #74AE22;
   font-weight: bold;
   font-size: 1.2em;
@@ -289,6 +313,11 @@ a.sideba-link-font:hover{
 }
 .brand-banner-font {
   font-size: 2.5em !important;
+}
+
+.panther-eye {
+max-height: 80px;
+padding-left: 30px;
 }
 
 #inline-navbar {
@@ -329,6 +358,10 @@ a.sideba-link-font:hover{
   background: url("../images/bullet1.png") no-repeat scroll 5px 4px transparent;
 }
 
+.side-navbar-facebook-feed {
+    padding-left:40px;
+}
+
 .side-navbar-main-list {
   list-style-type: none;
 }
@@ -367,3 +400,24 @@ a.sideba-link-font:hover{
   margin-top: 50px;
   padding-top: 15px;
 }
+.custom-jumbotron {
+    margin-bottom: 50px;
+    padding-top: 30px;
+}
+
+.slovar-border {
+  border: 1px solid lightgrey;
+}
+
+.slovar-border-left {
+  border-left: 1px solid lightgrey;
+}
+
+.slovar-background-color1 {
+  background-color: #ffffcc;
+}
+
+.slovar-background-color2 {
+  background-color: #ccffcc;;
+}
+

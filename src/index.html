@@ -33,7 +33,7 @@
 ================================================== -->
   <body ng-app="app">
     <!-- navbar that only shows on width bellow 768. It is a responsive design for width above 768 as well, but the client wanted something else and I see no point in deleting preexisting code -->
-    <div class="navbar-wrapper hide-above-768"> 
+    <div class="navbar-wrapper visible-xs-block"> 
       <div class="container">
 
         
@@ -69,7 +69,7 @@
             <div id="navbar" class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
                 <li class="active"><a ui-sref="home">Domača stran</a></li>
-                <li><a ui-sref="onas">O nas</a></li>
+                <li><a ui-sref="klub">O nas</a></li>
                 <li><a ui-sref="kontakt">Kontakt</a></li>
                 <li><a ui-sref="koledar">Koledar</a></li>
                 <li><a ui-sref="novice">Novice</a></li>
@@ -82,7 +82,7 @@
                     <li><a ui-sref="barje">Notranje Gorice</a></li>
                     <li role="separator" class="divider"></li>
                     <li class="dropdown-header">Kobudo</li>
-                    <li><a ui-sref="ljubljana">Ljubljana-Šiška</a></li>
+                    <li><a ui-sref="ljubljanaSub({scrollTo:'kobudo'})">Ljubljana-Šiška</a></li>
                   </ul>
                 </li>
               </ul>
@@ -96,12 +96,13 @@
     </div>
 <!-- above 768 width navbar and brand -->
 
-<div class="container hide-bellow-768">
+<div class="container hidden-xs">
   <div class="row"><!-- navbar-->
-    <div class="col-sm-12 col-lg-push-8 col-md-push-7 col-sm-push-6">
+    <div class="col-sm-12 col-lg-push-7 col-md-push-6 col-sm-push-5">
       <ul class="list-inline" id="inline-navbar">
         <li><a class="sidebar-link-font" ui-sref="home">Domača stran</a></li>
-        <li><a class="sidebar-link-font" ui-sref="onas">O nas</a></li>
+        <li><a class="sidebar-link-font" ui-sref="treningSub({scrollTo:'trening'})">Trening</a></li>
+        <li><a class="sidebar-link-font" ui-sref="klub">O nas</a></li>
         <li><a class="sidebar-link-font" ui-sref="kontakt">Kontakt</a></li>
         <li><a class="sidebar-link-font" ui-sref="koledar">Koledar</a></li>
         <li><a class="sidebar-link-font" ui-sref="novice">Novice</a></li>
@@ -120,7 +121,7 @@
           </div>
         </div>
         <div class="col-sm-6 col-sm-push-3 col-md-push-4">
-          <img class="img-responsive" src="images/panthereye.jpg">
+          <img class="img-responsive panther-eye" src="images/panthereye.jpg">
         </div class>
       </div>
     </div>

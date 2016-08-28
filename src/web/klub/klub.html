@@ -1,0 +1,173 @@
+<div class="container" ng-controller="klubCtrl">
+	<div class="row">
+		<div class="col-xs-11 col-sm-2 col-md-push-10 col-sm-push-9 hidden-xs">
+			<div class="row">
+				<div class="side-navbar "> <!-- must in in sperate div so that the navbar has a fixed positon inside the parent div, which gives it proper position in the webpage-->
+					<div class="col-xs-12">
+                        <ul>
+                            <li class="side-navbar-main-list"><a ui-sref="ljubljana" class="side-navbar-main sidebar-link-font"><b>Karate Šiška</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="medvode" class="side-navbar-main sidebar-link-font"><b>Karate Medvode</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="barje" class="side-navbar-main sidebar-link-font"><b>Karate Notranje Gorice</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="klub" class="side-navbar-main sidebar-link-font"><b>Klub</b></a></li>
+                                <ul class="side-navbar-submenu">
+                                    <a class="sidebar-link-font" ui-sref="klubSub({scrollTo: 'trenerji'})"><li>Trenerji</li></a>
+                                    <a class="sidebar-link-font" ui-sref="klubSub({scrollTo: 'oKlubu'})"><li>O klubu</li></a>
+                                    <a class="sidebar-link-font" ui-sref="klubSub({scrollTo: 'mojstri'})"><li>Karate mojstri v klubu</li></a>
+                                </ul>
+                            <li class="side-navbar-main-list"><a ui-sref="karate" class="side-navbar-main sidebar-link-font"><b>Karate</b></a></li>
+                        </ul>
+                    </div>
+					<div id= "facebook-sidebar" class="row">
+                        <div class="col-xs-10 col-xs-offset-3">
+						  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FPanther-martial-arts-group-544742965711685%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=227529503969336" width="155" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					   </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-8 col-sm-7 col-lg-8">
+			<div id="trenerji" class="row border-top" >
+				
+				<div class="col-xs-12">
+					<h3 class="page-title"><b>PANTHER MARTIAL ARTS GROUP - trenerji</b></h3>
+				</div>
+				<div class="col-xs-12">
+					<div class="col-xs-3 col-sm-push-9">
+						<img src="images/merc.jpg" class="img-responsive">
+					</div>
+					<div class="col-xs-9 col-sm-pull-3">
+						<h4><b>JANI MERC</b></h4>
+						<ul>
+							<li><b>mojster karateja 7. DAN</b></li>
+							<li><b>mojster kobuda 1. DAN</b></li>
+							<li>najvišji naziv za borilne veščine v Sloveniji - <b>mentor borilnih veščin</b></li>
+							<li>diploma o strokovni usposobljenosti za strokovno delo v športu - <b>trener karateja</b></li>
+							<li>karate trenira od leta 1972, kobudo od leta 1994</li>
+							<li>37 let trenerskih izkušenj v klubu, ki ga je ustanovil leta 1978</li>
+							<li><b>selektor in trener WIKF reprezentance</b>, ki je na evropskih prvenstvih osvojila več medalj v ekipni in posamezni konkurenci</li>
+							<li>med letom 2008 in 2009 je bil <b>selektor reprezentanc v Karate zvezi Slovenije</b></li>
+						</ul>
+					</div>
+				</div>
+					<div class="col-xs-12">
+					<div class="col-xs-3 col-sm-push-9">
+						<img src="images/jeglic.jpg" class="img-responsive">
+					</div>
+					<div class="col-xs-9 col-sm-pull-3">
+						<h4><b>ANDREJA JEGLIČ</b></h4>
+						<ul>
+							<li><b>mojstrica karateja 3. DAN</b></li>
+							<li>diploma o strokovni usposobljenosti za strokovno delo v športu - <b>trener karateja</b></li>
+							<li>karate trenira od leta 1988</li>
+							<li>12 let trenerskih izkušenj</li>
+							<li>nosilka <b>bronaste medalje</b> na evropskem WIKF prvenstvu 2004 v borbah članice in <b>srebrne medalje</b> na WIKF svetovnem prvenstvu 2006 v borbah za veteranke</li>
+							<li>večkratna nosilka medalj z državnih WKF prevenstev v borbah in katah, posamično in ekipno v letih 1992-2010</b></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+			<div id="oKlubu" class="row border-top" >
+				
+				<div class="col-xs-12">
+					<h3 class="page-title"><b>PANTHER MARTIAL ARTS GROUP - O klubu</b></h3>
+				</div>
+				<div class="col-sm-4 col-xs-6 col-sm-push-8">
+					<div class="row">
+						<div class="col-xs-9">
+						<img src="images/KKS1.jpg" class="img-responsive">
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-9">
+							<p class="caption">ustanovitelj in trener Karate kluba Šiška
+							<br>
+							Jani Merc s svojim učencem
+							<br>
+							prva generacije leta 1977
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-8 col-xs-6 col-sm-pull-4">
+					Prvi začetki skupine segajo v leto <span class="bold-green-text">1978</span>, ko je nastal <span class="bold-green-text">Karate klub Šiška</span>. Prvi trener in ustanovitelj je bil <b>Jani Merc</b>, ki je leta 1977 prevzel vodenje pionirske sekcije DBV Ljubljana v Šiški na Osnovni šoli Riharda Jakopiča, Derčeva ulica 1 (pri Kinu Šiška).
+				</div>				
+				<div class="col-sm-8 col-xs-12 col-sm-pull-4">
+					<br>
+					<br>
+					Konec sedemdesetih let je postal karate zelo popularna veščina zaradi Bruce Lee-ja, njegove filme so takrat predvajali v Sloveniji. Tako so se poleg otrok začeli vpisovati tudi odrasli. Po enem letu dela v sekciji, je le-ta prerasla v klub. Ime je dobil po občini v kateri je deloval - Karate klub Šiška. Občasno je klub gostoval na skoraj vsaki osnovni šoli, ki obstaja na tem območju.
+				</div>
+				<div class="col-xs-12">
+					<br>
+					<br>
+					KKlub je imel v času nekdanje skupne države Jugoslavije veliko članov iz katerih je prišlo tudi veliko <b>državnih prvakov</b>. Konec osemdesetih let je bil celo eden najmočnejših klubov v Sloveniji. Bil je tudi prvi klub, ki je v letih <b>1984-90 razvil napredne tehnike športne borbe</b>. K temu je v glavnem pripomoglo sodelovanje med našim učiteljem Janijem Mercem in, takrat najbolj naprednim ter v svetu cenjenim trenerjem Jugoslovanske reprezentance, <b>Dušanom Dačićem</b>..
+				</div>
+				<div class="col-xs-12">
+				<br>
+				<br>
+				V začetku novega tisočletja je sensei Jani Merc ustanovil nove klube v Ljubljani, Medvodah in Podpeči, ki delujejo pod skupnim imenom PANTHER KARATE GROUP. S pridobitvijo lastnih prostorov v Ljubljani <span class="bold-green-text">DOJO PANTHER</span> pa so nastale nove možnosti in izzivi. K sodelovanju smo povabili trenerje za JUDO in KOBUDO. Tako je v zadnjih letih nastala nova skupina <span class="bold-green-text">PANTHER MARTIAL ARTS GROUP</span>, ki združuje različne borilne veščine. Vadimo jih samostojno ali pa v medsebojnem dopolnjevanju (karate in judo). 
+				</div>
+			</div>
+			<div id="mojstri" class="row border-top" >
+				
+				<div class="col-xs-12">
+					<h3 class="page-title"><b>PANTHER MARTIAL ARTS GROUP - karate mojstri kluba</b></h3>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+					<span class="bold-green-text">mojster karateja 7. DAN</span>
+					<br>
+					<span class="bold-green-text">mojster kobuda 1. DAN</span>
+					<ul>
+						<li>Jani Merc</li>
+					</ul>
+					<span class="bold-green-text">mojster karateja 4. DAN</span>
+					<ul>
+						<li>Jan Merc</li>   
+					</ul>
+					<span class="bold-green-text">mojster karateja 3. DAN</span>
+					<ul>
+						<li>Andreja Jeglič
+					</ul>
+					<span class="bold-green-text">mojster karateja 2. DAN</span>
+					<ul>
+						<li>Rifat Ramdedovič
+						<li>Franci Jelen
+					</ul>
+				</div>
+				<div class="col-sm-6 col-xs-12">
+ 				<span class="bold-green-text">mojster karateja 1. DAN</span>
+					 <ul>
+						<li>Dragan Pavlovič</li>
+						<li>Zorka Lalič</li>
+						<li>Zejnel Gashi</li>
+						<li>Ivan Klemenčič</li>
+						<li>Janko Gobec</li>
+						<li>Mojca Vavpotič</li>
+						<li>Sanja Žumer</li>
+						<li>Marko Bizjan</li>
+						<li>Petar Ivić</li>
+						<li>Srečko Jarc</li>
+						<li>Azra Dolič</li>
+						<li>Nedeljko Vasiljevič</li>
+						<li>Husein Bučan</li>
+						<li>Tadeja Vidmar</li>
+						<li>Vanda Omejc</li>
+						<li>Zvonka Šavor</li>
+						<li>Artur Štern</li>
+						<li>Damjan Gruden</li>
+						<li>Aleš Gruden</li>
+						<li>Rado Lapuh</li>
+						<li>Marjan Velej</li>
+						<li>Tomislav Podlogar
+						<li>Meta Kovač</li>
+						<li>Franci Krivic</li>
+						<li>Primož Mlekuš</li>
+						<li>Drago Vaupotič</li>
+						<li>Marija Šubic</li>
+						<li>Andrej Pirih</li>
+					</ul>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
