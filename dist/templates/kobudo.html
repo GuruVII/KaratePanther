@@ -1,0 +1,154 @@
+<div class="container" ng-controller="kobudoCtrl">
+	<div class="row">
+		<div class="col-xs-11 col-sm-2 col-md-push-9 col-sm-push-8 hidden-xs">
+			<div class="row">
+				<div class="side-navbar "> <!-- must in in sperate div so that the navbar has a fixed positon inside the parent div, which gives it proper position in the webpage-->
+					<div class="col-xs-12">
+                        <ul>
+                            <li class="side-navbar-main-list"><a ui-sref="ljubljana" class="side-navbar-main sidebar-link-font"><b>Karate Šiška</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="medvode" class="side-navbar-main sidebar-link-font"><b>Karate Medvode</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="barje" class="side-navbar-main sidebar-link-font  hidden"><b>Karate Notranje Gorice</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="kobudo" class="side-navbar-main sidebar-link-font"><b>Kobudo</b></a></li>
+                                <ul class="side-navbar-submenu">
+                                    <a class="sidebar-link-font" ui-sref="kobudoSub({scrollTo: 'kajKobudo'})"><li>kaj je kobudo</li></a>
+                                    <a class="sidebar-link-font" ui-sref="kobudoSub({scrollTo: 'vpis'})"><li>vpis kobudo</li></a>
+                                    <a class="sidebar-link-font" ui-sref="kobudoSub({scrollTo: 'zemljevid'})"><li>zemljevid</li></a>
+                                    <a class="sidebar-link-font" ui-sref="kobudoSub({scrollTo: 'orozje'})"><li>kobudo orožja</li></a>
+                                </ul>
+                            <li class="side-navbar-main-list"><a ui-sref="klub" class="side-navbar-main sidebar-link-font"><b>Klub</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="karate" class="side-navbar-main sidebar-link-font"><b>Karate</b></a></li>
+                            <li class="side-navbar-main-list"><a ui-sref="novice" class="side-navbar-main sidebar-link-font"><b>Novice</b></a></li>
+                        </ul>
+                    </div>
+					<div id= "facebook-sidebar" class="row" ng-if="showCookies">
+                        <div class="col-xs-10 col-xs-offset-4">
+                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FPanther-martial-arts-group-544742965711685%2F&width=108&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId=180626785330207" width="108" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+					   </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-8 col-sm-7 col-lg-8 col-sm-pull-1">
+            <div id="kajKobudo" class="row">
+                <div class="col-xs-12">
+					<h3 class="page-title"><b>KARATE KLUB ŠIŠKA - kaj je kobudo?</b></h3>
+				</div>
+                <div class="col-xs-12">
+                    <p>Kobudo je stara borilna veščina nastala na japonskem otoku Okinawa, ki uporablja orožje (BO - palica, SAI - noži, JO - kratka palica, NUNTI - sulica, TONFA, NUNCHAKU,....)</p>
+
+                    <p>Konec 16. stoletja je Toyotomi Hideyoshi uvedel zakon, ki je prepovedoval nošenje orožja. Okinawski kmetje so ostali brez vsake možnosti obrambe proti samurajem, ki so edini lahko nosili orožje. Za obrambo so pričeli uporabljati poljedelska orodja. Sčasoma se je s pomočjo položajev in načina gibanja pri boju brez orožja, razvila borilna <b>veščina z orožjem</b> imenovana <b>KOBUDO</b>.</p>
+
+
+
+                    <p><b>Slovenska Oshukai kobudo zveza</b> je članica Svetovne Oshukai kobudo zveze, ko jo vodi  <b>Kenju Chinen</b>, zastopnik za Slovenijo pa je postal Jani <b>Merc</b>, prvi slovenski mojster Oshukai Kobuda.</p>
+
+
+
+                    <p>Vadba te veščine je primerna za otroke stare več kot 14 let, mlade in odrasle, saj ne zahteva posebne fizične priprave. Deluje krepilno na naše telo, odvisno od intenzivnosti izvajanja tehnik. Nevarnosti poškodb ob pravilnem ravnanju ni, saj se vaje v parih izvajajo zelo postopno in izključno z dogovorjenimi tehnikami.</p>
+                </div>
+                <div class="col-xs-6 hidden-xs hidden-sm">
+                    <div class="embed-responsive embed-responsive-4by3 embed-responsive-16by9">
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/IPN8-bpIQ90" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-xs-6  hidden-xs hidden-sm">
+                    <div class="embed-responsive embed-responsive-4by3 embed-responsive-16by9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/O7iuh9Dq0Ww" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+			<div id="vpis" class="row" >
+                <div class="col-xs-12">
+					<h3 class="page-title"><b>KARATE KLUB ŠIŠKA - vpis KOBUDO</b></h3>
+				</div>
+				<div class="col-xs-12">
+					<p>Vadba je v telovadnici <b>DOJO PANTHER</b>, Celovška cesta 264, Ljubljana (blizu Mercator centra Šiška).</p>	
+				</div>
+				<div class="col-xs-12">	
+					<div class="row">
+						<div class="col-sm-6 col-sm-offset-3">
+							<p class="vpis-font-title">VPIS
+								<br>
+							 Vpis možen čez celo leto</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<h5>KOBUDO</h5>
+							<b>Otroci nad 10 let, mladi in odrasli</b>
+							<br>
+							Vpis poteka čez celo leto.
+							<br>
+							Urnik vadbe: 
+							<ul>
+								<li>Sreda ob 18.00 uri</li>
+								<li>Petek ob 18.00 uri</li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+			</div>
+
+			<div id="zemljevid" class="row border-top">
+				<div class="col-xs-12">
+					<h3><b>KARATE KLUB ŠIŠKA - Zemljevid</b></h3>
+					<div class="embed-responsive embed-responsive-16by9 content jumbotron" ng-if="showCookies">
+						<iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1645.4339918165517!2d14.476822301693586!3d46.08541406998288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477acd3014dbdc01%3A0x803eedcc679d1e00!2sCelov%C5%A1ka+cesta+264%2C+1000+Ljubljana!5e0!3m2!1ssl!2ssi!4v1471472731281" width="600" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+                    <div class="col-xs-12"  ng-if="showCookies == false">
+                        <img src="images/rezervniZemljevidLjubljana.jpg" class="img-responsive backup-map"> 
+                    </div>
+					<div class="col-sm-6">
+						 <img src="images/slika-siska.jpg" class="img-responsive"> 
+					</div>
+					<div class="col-sm-6">
+						<img src="images/slika-siska2.jpg" class="img-responsive">
+					</div>
+				</div>
+			</div>
+            <div id="orozje" class="row border-top">
+                <div class="col-xs-12">
+					<h3 class="page-title"><b>KARATE KLUB ŠIŠKA - kobudo orožja</b></h3>
+				</div>
+                <p><b>BO</b> – palica dboolga približno 180-185 cm. Nastala je iz poljedelskega orodja TENBIN. To je palica, ki se nosi preko ram, na vsaki strani pa visi košara za nošenje tovora.</p>
+
+                <p><b>JO</b> – krajše palica, ki so jo uporabljali kot sprehajalno palico (starejši ljudje, menihi). Palica je osnovno in najstarejše orožje v kobudo veščini.</p>
+
+                <p><b>SAI</b> – po obliki je kot kratka sablja oz. nož z dvema krakoma, ki nima rezila. Dolžina je odvisna od dolžine podlaktnice. S pomočjo zavitih krakov ujamemo ali včasih celo zlomimo napadalčevo palico ali sabljo.</p>
+
+                <p><b>TONFA</b> (tonqua) – je bil lesen ročaj za poganjanje mlinskega kamna. Tonfo držimo za krajši ročaj. Udarci in blokade so nastali iz karate tehnik, izvajamo pa jih z rotacijo ali brez. Moderno izvedbo poznamo kot "nightstick" – policijski "pendrek".</p>
+
+                <p><b>NUNCHAKU</b> – je bil cepec za mlatenje žita. Dve okrogli ali šesterokotni kratki palici sta med seboj povezani z vrvjo ali verigo. V Sloveniji je še pred 50-leti ponekod na vaseh obstajal lesen cepec, ki pa je imel en konec daljši saj so pri nas mlatili žito stoje.
+                Veliko popularnost je nuncahku dobil v filmih Bruce Lee-ja.</p>
+
+                <p><b>KAMA</b> – srp. Uporabljali so ga pri žetju riža. Je nevarno orožje za učenca, zato so pri treningu uporablja kama z lesenim rezilom.</p>
+
+                <p><b>TEKKO</b> – "knuckles" – je kos kovine oblikovane okoli členkov, narejenega da poveča moč udarca s pestjo in se je uporabljal v pretepih. Pri nas smo ga imenovali "boksar".</p>
+
+                <p><b>TAMBO</b> – kratka palica dolžine cca. 30 cm, dolžina od komolca do zapestja. Običajno se uporablja dve palici v vsaki roki eno.</p>
+
+                <p><b>KUWA</b> – motika, ki je znano poljedelsko orodje.</p>
+
+                <p><b>HANBO</b> – palica srednje dolžine, približno 90 cm.</p>
+
+                <p><b>NUNTI BO</b> – podobna je sulici, konica pa narejena iz "manji-shaped" SAI.</p>
+
+                <p><b>SANSETSUKON</b> – je podobno orožje kot NUNCHAKU, vendar iz treh delov povezanih z verigo.</p>
+
+                <p><b>TINBE-ROCHIN</b> Je najmanj poznano okinavsko orožje. Sestoji iz ščita in sablje, ki ima obliko in velikost mačete.</p>
+
+ 
+            </div>
+			<footer> 
+				<div class="row">
+					<div class="col-xs-6">programe Karate kluba Šiške podpira Mestna občina Ljubljana z letnim sofinanciranjem. </div>
+					<div class="col-xs-4 col-sm-offset-2">
+						<a href="http://www.ljubljana.si/si/mol/">
+							<img class="img-responsive" src="images/MOL.jpg">
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</div>

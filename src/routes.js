@@ -49,6 +49,12 @@ app.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: "templates/medvode.html"
 	});
     
+        $stateProvider.state('kobudo',
+	{
+		url: '/kobudo',
+		templateUrl: "templates/kobudo.html"
+	});
+    
     $stateProvider.state('klub',
 	{
 		url: '/klub',
@@ -64,6 +70,12 @@ app.config(function($stateProvider, $urlRouterProvider){
 	{
 		url: '/novice',
 		templateUrl: "templates/novice.html"
+	});
+    
+    	$stateProvider.state('piskotki',
+	{
+		url: '/piskotki',
+		templateUrl: "templates/piskotki.html"
 	});
 
 
@@ -99,6 +111,11 @@ app.config(function($stateProvider, $urlRouterProvider){
 	  url: '/karate/:scrollTo',  
 	  controller: 'karateCtrl', 
 	  templateUrl: 'templates/karate.html',
+	});
+    $stateProvider.state('kobudoSub', {
+	  url: '/kobudo/:scrollTo',  
+	  controller: 'kobudoCtrl', 
+	  templateUrl: 'templates/kobudo.html',
 	});
 });
 

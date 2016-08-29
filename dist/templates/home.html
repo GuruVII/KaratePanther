@@ -30,16 +30,7 @@
         <li data-target="#myCarousel" data-slide-to="4"></li>
       </ol>
     </div> -->
-    <!-- /.carousel -->
-    <div class="container">
-      <div class="col-xs-10 col-xs-offset-1">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 hidden-xs">
-            <img src="images/karate2020.jpg" class="img-responsive">
-          </div>
-        </div>
-      </div>
-    </div> 
+    <!-- /.carousel --> 
     <div class="container custom-jumbotron">
       <div class="col-xs-10 col-xs-offset-1">
         <div class="row">
@@ -57,7 +48,7 @@
           <div class="col-sm-6 col-xs-12">
             <div class="col-xs-12 jumbotron-main-font">
               <h2><b>V septembru</b> in <b>oktobru 2016</b><h2>
-              <h2>VPIS <b>KARATE</b> IN <b>KOBUDO</b></h2>
+                  <h2>VPIS <b>KARATE</b> IN <b><a ui-sref="kobudo" class="jumbotron-link-font">KOBUDO</a></b></h2>
             </div>
             <div class="col-xs-12 hidden-xs">
               <p class="jumbotron-main-font">programi za začetnike,</p>
@@ -68,8 +59,8 @@
           </div>
           <div class="col-xs-3 hidden-xs">
             <div class="col-xs-12">
-              <h3 class="jumbotron-rightSide-font">Šiška</h2>
-              <h3 class="jumbotron-rightSide-font">Medvode</h2>
+              <h3 class="jumbotron-rightSide-font"><a ui-sref="ljubljana" class="jumbotron-link-font">Šiška</a></h2>
+              <h3 class="jumbotron-rightSide-font"><a ui-sref="medvode" class="jumbotron-link-font">Medvode</a></h2>
               <h3 class="jumbotron-rightSide-font">Notranje Gorice</h2>
             </div>
             <div class="col-xs-12  margin-top-20px">
@@ -98,10 +89,9 @@
           </a>
           <a class="anchor-link-font" ui-sref="ljubljana">
             <h2> Ljubljana Šiška</h2>
-            <h4>Karate ali Kobudo</h4>
+            <h4>Karate</h4>
             <p>Vpis na <b>KARATE</b> je v septembru in oktobru<br>
-            vsak ponedeljek in sredo ob 18.00 uri<br>
-            Vpis za <b>KOBUDO</b> je vsak petek ob 18.00 uri.</p>
+            vsak ponedeljek in sredo ob 18.00 uri<br>.</p>
           </a>
           <p>
             <a class="btn btn-custom btn-default" ui-sref="ljubljana" role="button">Več informacij</a>
@@ -134,9 +124,41 @@
             <p>Še ni informacije.</p>
           </a>
           <p>
-            <a class="btn btn-custom btn-default" ui-sref="barje" role="button">Več informacij</a>
+            <a class="btn btn-custom btn-default hidden" ui-sref="barje" role="button">Več informacij</a>
           </p>
         </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
+      </div>
+        <div class="row">
+            <div class="col-sm-4  hidden-xs hidden-sm">
+                <div class="embed-responsive embed-responsive-4by3 embed-responsive-16by9">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/MUhz0L1zf8o" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4">
+              <a ui-sref="kobudoSub({scrollTo: 'zemljevid'})">
+                <img class="img-circle" src="images/zemljevidLjubljanaKobudo.png" alt="Generic placeholder image" width="140" height="140">
+              </a>
+              <a class="anchor-link-font" ui-sref="ljubljana">
+                <h2> Ljubljana Šiška</h2>
+                <h4>Kobudo</h4>
+                <p>Vpis za <b>KOBUDO</b> je vsak petek ob 18.00 uri.</p>
+              </a>
+              <p>
+                <a class="btn btn-custom btn-default" ui-sref="kobudo" role="button">Več informacij</a>
+              </p>
+            </div>
+            <div class="col-sm-4  hidden-xs hidden-sm">
+                <div class="embed-responsive embed-responsive-4by3 embed-responsive-16by9">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/PATi8akRiVs" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div><!-- /.col-lg-4 -->
+        <!-- /.row -->
+      <div class="col-xs-10 col-xs-offset-1">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 hidden-xs">
+            <img src="images/karate2020.jpg" class="img-responsive">
+          </div>
+        </div>
+      </div>
     </div><!-- /.container -->

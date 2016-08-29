@@ -7,8 +7,57 @@ $("#navbar").find("li").removeClass("active");
 $(this).addClass("active");
 });// finds all children of the #navbar that are in a list, removes active class and adds it to the one you clicked on
 app.controller('mainCtrl', function($scope) {
+        $scope.showCookies = false;
+        checkCookie();
+    
+        var X = document.cookie
+        console.log(X);
+    
+    $scope.rejectCookies = function(){ //this functions just hides the cookie prompt
+        $scope.showCookiePrompt = false;
+        console.log("reject")
+    };
+    
+    $scope.acceptCookies = function(){ //This function makes a permanent cookie for the website
+        document.cookie = "wantsCookies=true; expires=Thu, 02 Jan 2116 00:00:00 UTC";
+        $scope.showCookies = true;
+        $scope.showCookiePrompt = false;
+        console.log("accept")
+    };
+    
+    
 
-});
+
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i <ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length,c.length);
+            }
+        }
+        return "";
+    } 
+
+    function checkCookie() {
+        var cookieCheck = getCookie("wantsCookies");
+        if (cookieCheck=="true") {
+            console.log("checkCookie() dela")
+            $scope.showCookies = true;
+            $scope.showCookiePrompt = false;
+            console.log("person wants cookies")
+        }
+        else {
+            $scope.showCookiePrompt = true; 
+        }
+    } ;
+
+
+    });
 
 app.config(function($stateProvider, $urlRouterProvider){
 
@@ -60,6 +109,12 @@ app.config(function($stateProvider, $urlRouterProvider){
 		templateUrl: "templates/medvode.html"
 	});
     
+        $stateProvider.state('kobudo',
+	{
+		url: '/kobudo',
+		templateUrl: "templates/kobudo.html"
+	});
+    
     $stateProvider.state('klub',
 	{
 		url: '/klub',
@@ -75,6 +130,12 @@ app.config(function($stateProvider, $urlRouterProvider){
 	{
 		url: '/novice',
 		templateUrl: "templates/novice.html"
+	});
+    
+    	$stateProvider.state('piskotki',
+	{
+		url: '/piskotki',
+		templateUrl: "templates/piskotki.html"
 	});
 
 
@@ -110,6 +171,11 @@ app.config(function($stateProvider, $urlRouterProvider){
 	  url: '/karate/:scrollTo',  
 	  controller: 'karateCtrl', 
 	  templateUrl: 'templates/karate.html',
+	});
+    $stateProvider.state('kobudoSub', {
+	  url: '/kobudo/:scrollTo',  
+	  controller: 'kobudoCtrl', 
+	  templateUrl: 'templates/kobudo.html',
 	});
 });
 
@@ -374,6 +440,8 @@ $scope.slovarNazivi = [
 ]
 });
 app.controller('klubCtrl', function($scope) {
+});
+app.controller('kobudoCtrl', function($scope) {
 });
 app.controller('ljubljanaCtrl', function($scope) {
 

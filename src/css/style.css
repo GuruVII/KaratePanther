@@ -421,3 +421,24 @@ padding-left: 30px;
   background-color: #ccffcc;;
 }
 
+
+.cookie-notice {
+    opacity: 0.8;
+}
+
+.btn-cookie-yes {
+    background-color: lightgreen;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+.btn-cookie-no {
+    background-color: crimson;
+    color: whitesmoke;
+    margin-bottom: 15px;
+}
+
+.backup-map{
+    margin-bottom: 20px;
+}
+

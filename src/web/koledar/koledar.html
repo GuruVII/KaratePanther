@@ -1,7 +1,14 @@
 <div class="container">
-	<div class="row margin-top-20px">
+	<div class="row margin-top-20px" ng-if="showCookies">
 		<div class="embed-responsive embed-responsive-4by3">
 			<iframe src="https://calendar.google.com/calendar/embed?src=panhter.martial.arts%40gmail.com&ctz=Europe/Belgrade&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;hl=sl&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FBelgrade" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		</div>
+	</div>
+    <div class="col-xs-8 col-sm-push-1 margin-top-20px" ng-if="showCookies == false">
+		<div class="row">
+			<div class="col-xs-12">
+				Za prikaz koledarja na strani so potrebni piškotki. V kolikor jih ne želite, pa lahko do koledarja pridete prek <br><a href="https://calendar.google.com/calendar/embed?src=panhter.martial.arts%40gmail.com"><b>te povezave</b></a>
+			</div>
 		</div>
 	</div>
 </div>
