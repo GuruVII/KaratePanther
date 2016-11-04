@@ -60,14 +60,6 @@ a.anchor-link-font:hover{
   text-decoration:none !important;
 }
 
-a.jumbotron-link-font {
-   color: #5a5a5a !important; 
-}
-
-a.jumbotron-link-font:hover{
-  color: #404040 !important;
-}
-
 a.sidebar-link-font {
 color: #74AE22 !important;
 }
