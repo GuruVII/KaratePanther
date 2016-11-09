@@ -1,32 +1,6 @@
 <div class="container" ng-controller="klubCtrl">
 	<div class="row">
-		<div class="col-xs-11 col-sm-2 col-md-push-9 col-sm-push-8 hidden-xs">
-			<div class="row">
-				<div class="side-navbar "> <!-- must in in sperate div so that the navbar has a fixed positon inside the parent div, which gives it proper position in the webpage-->
-					<div class="col-xs-12">
-                        <ul>
-                            <li class="side-navbar-main-list"><a ui-sref="ljubljana" class="side-navbar-main sidebar-link-font"><b>Karate Šiška</b></a></li>
-                            <li class="side-navbar-main-list"><a ui-sref="medvode" class="side-navbar-main sidebar-link-font"><b>Karate Medvode</b></a></li>
-                            <li class="side-navbar-main-list"><a ui-sref="barje" class="side-navbar-main sidebar-link-font"><b>Karate Jezero Podpeč</b></a></li>
-                            <li class="side-navbar-main-list"><a ui-sref="kobudo" class="side-navbar-main sidebar-link-font"><b>Kobudo</b></a></li>
-                            <li class="side-navbar-main-list"><a ui-sref="klub" class="side-navbar-main sidebar-link-font"><b>Klub</b></a></li>
-                                <ul class="side-navbar-submenu">
-                                    <a class="sidebar-link-font" ui-sref="klubSub({scrollTo: 'trenerji'})"><li>Trenerji</li></a>
-                                    <a class="sidebar-link-font" ui-sref="klubSub({scrollTo: 'oKlubu'})"><li>O klubu</li></a>
-                                    <a class="sidebar-link-font" ui-sref="klubSub({scrollTo: 'mojstri'})"><li>Karate mojstri v klubu</li></a>
-                                </ul>
-                            <li class="side-navbar-main-list"><a ui-sref="karate" class="side-navbar-main sidebar-link-font"><b>Karate</b></a></li>
-                            <li class="side-navbar-main-list"><a ui-sref="novice" class="side-navbar-main sidebar-link-font"><b>Novice</b></a></li>
-                        </ul>
-                    </div>
-					<div id= "facebook-sidebar" class="row" ng-if="showCookies">
-                        <div class="col-xs-10 col-xs-offset-4">
-                            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FPanther-martial-arts-group-544742965711685%2F&width=108&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId=180626785330207" width="108" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-					   </div>
-                    </div>
-				</div>
-			</div>
-		</div>
+		<navbar-directive></navbar-directive>
 		<div class="col-xs-8 col-sm-7 col-lg-8 col-sm-pull-1">
 			<div id="trenerji" class="row" >
 				

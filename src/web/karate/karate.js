@@ -1,4 +1,5 @@
 app.controller('karateCtrl', function($scope) {
+	$scope.currentPageURL = "karate";
 $scope.slovarGibi = [{word:"	Age	", translation:"	navzgor 	"},
 {word:"	Ashi	", translation:"	noga oz. stopalo	"},
 {word:"	Barate	", translation:"	hrbet prstov 	"},

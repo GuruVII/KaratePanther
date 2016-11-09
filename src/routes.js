@@ -27,7 +27,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     
     $stateProvider.state('barje',
 	{
-		url: '/notranje-gorice',
+		url: '/jezero',
 		templateUrl: "templates/barje.html"
 	});
     
@@ -92,7 +92,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 	});
 
 	$stateProvider.state('barjeSub', {
-	  url: '/notranje-gorice/:scrollTo',  
+	  url: '/jezero/:scrollTo',  
 	  controller: 'barjeCtrl', 
 	  templateUrl: 'templates/barje.html',
 	});

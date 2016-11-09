@@ -87,7 +87,7 @@ app.config(function($stateProvider, $urlRouterProvider){
     
     $stateProvider.state('barje',
 	{
-		url: '/notranje-gorice',
+		url: '/jezero',
 		templateUrl: "templates/barje.html"
 	});
     
@@ -152,7 +152,7 @@ app.config(function($stateProvider, $urlRouterProvider){
 	});
 
 	$stateProvider.state('barjeSub', {
-	  url: '/notranje-gorice/:scrollTo',  
+	  url: '/jezero/:scrollTo',  
 	  controller: 'barjeCtrl', 
 	  templateUrl: 'templates/barje.html',
 	});
@@ -190,8 +190,10 @@ app.run(function($rootScope, $location, $anchorScroll, $stateParams, $timeout) {
 })
 
 app.controller('barjeCtrl', function($scope) {
+	$scope.currentPageURL = "jezero";
 });
 app.controller('karateCtrl', function($scope) {
+	$scope.currentPageURL = "karate";
 $scope.slovarGibi = [{word:"	Age	", translation:"	navzgor 	"},
 {word:"	Ashi	", translation:"	noga oz. stopalo	"},
 {word:"	Barate	", translation:"	hrbet prstov 	"},
@@ -440,11 +442,22 @@ $scope.slovarNazivi = [
 ]
 });
 app.controller('klubCtrl', function($scope) {
+	$scope.currentPageURL = "klub";
 });
 app.controller('kobudoCtrl', function($scope) {
+	$scope.currentPageURL = "kobudo";
 });
 app.controller('ljubljanaCtrl', function($scope) {
-
+	$scope.currentPageURL = "ljubljana";
 });
 app.controller('medvodeCtrl', function($scope) {
+	$scope.currentPageURL = "medvode";
+});
+app.directive('navbarDirective', function() {
+  return {
+    templateUrl: "templates/navbar.html",
+    restrict: 'E'
+  };
+});
+app.controller('noviceCtrl', function($scope) {
 });
