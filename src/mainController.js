@@ -38,10 +38,8 @@ app.controller('mainCtrl', function($scope) {
     function checkCookie() {
         var cookieCheck = getCookie("wantsCookies");
         if (cookieCheck=="true") {
-            console.log("checkCookie() dela")
             $scope.showCookies = true;
             $scope.showCookiePrompt = false;
-            console.log("person wants cookies")
         }
         else {
             $scope.showCookiePrompt = true; 
