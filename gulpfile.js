@@ -15,12 +15,12 @@ gulp.task('scripts', function () {
 gulp.src(['!src/app.js','src/**/*.js'])
 	.pipe(concat('all.js'))
 	.pipe(gulp.dest('dist/js'))
-	.pipe(notify('Javascript dela'));
+	
 
 
 gulp.src(['src/app.js'])
 	.pipe(gulp.dest('dist/js'))
-	.pipe(notify('prenešen app.js'));
+	
 
 
 });
@@ -29,69 +29,65 @@ gulp.task('moveBower',function(){
 gulp.src(['bower_components/angular-ui-router/release/angular-ui-router.min.js'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved bower angular router to dist/assets/js')
-	);
+	
 gulp.src(['bower_components/angular/angular.min.js'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved bower angular assets to dist/assets/js')
-	);
+	
 gulp.src(['bower_components/angular/angular-csp.css'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved bower angular CSS assets to dist/assets/js')
-	);
+	
 gulp.src(['bower_components/jquery/dist/jquery.min.js'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved bower jquery assets to dist/assets/js')
-	);
+	
 
 gulp.src(['bower_components/bootstrap/dist/css/bootstrap.min.css','bower_components/bootstrap/dist/css/bootstrap-theme.min.css'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/css'))
-	.pipe(notify('Moved bower bootstrap CSS components to dist/assets/css'));
+	
 
 gulp.src(['bower_components/bootstrap/dist/js/bootstrap.min.js','bower_components/bootstrap/dist/js/npm.js'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved bower bootstrap js components to dist/assets/css'));
+	
 
 gulp.src(['bower_components/**/*.ttf', 'bower_components/**/*.woff'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/css/fonts'))
-	.pipe(notify('Moved bower fonts components to dist/assets/fonts'));
+	
 
 
 
 gulp.src(['bower_components/angular-resource/angular-resource.min.js','angular-resource.min.js.map'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved bower fonts components to dist/assets/js'));
+	
 
 
 gulp.src(['bower_components/angular-bootstrap/ui-bootstrap-csp.css'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/css'))
-	.pipe(notify('Moved angular-boostrap components to dist/assets/css'));
+	
 
 
 gulp.src(['bower_components/angular-bootstrap/ui-bootstrap.min.js', 'bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved angular-boostrap components to dist/assets/js'));
+	
 
 
 gulp.src(['bower_components/angular-animate/angular-animate.min.js'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved angular animate components to dist/assets/js'));
+	
 
 
 gulp.src(['bower_components/angular-touch/angular-touch.min.js'])
 	.pipe(flatten())
 	.pipe(gulp.dest('dist/assets/js'))
-	.pipe(notify('Moved angular touch to dist/assets/js'));
+	
 });
 
 gulp.task('move', function () {
@@ -100,14 +96,14 @@ gulp.src(["!./src/index.html", "./src/**/*.html"])
 //remove any reative golder, subfolders
 .pipe(flatten())
 .pipe(gulp.dest("./dist/templates"))
-.pipe(notify("moved templates"));
+
 
 //Set the source. You can exclude files with !
 gulp.src(["./src/index.html"])
 //remove any reative golder, subfolders
 .pipe(flatten())
 .pipe(gulp.dest("./dist"))
-.pipe(notify("moved index"));
+
 
 
 //Set the source. You can exclude files with !
@@ -116,17 +112,17 @@ gulp.src(["./src/**/*.css"])
 .pipe(concat('style.css'))
 .pipe(flatten())
 .pipe(gulp.dest("./dist/css"))
-.pipe(notify("moved css"));
+
 
 gulp.src(['./src/**/*.ttf', './src/**/*.woff'])
 	.pipe(flatten())
 	.pipe(gulp.dest('./dist/css/fonts'))
-	.pipe(notify('fonts components to dist/css/fonts'));
+	
 
 gulp.src(['./src/images/*.jpg', './src/images/*.png', './src/images/*.gif'])
 	.pipe(flatten())
 	.pipe(gulp.dest('./dist/images'))
-	.pipe(notify('moved pictures to dist/images '));
+	
 
 });
 
@@ -138,7 +134,7 @@ gulp.src(".")
 port: 48081,
 livereload: true,
 open: "http://localhost:48081/dist/"
-})).pipe(notify("Running webserver!"));
+}));
 
 });
 

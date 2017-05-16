@@ -451,11 +451,11 @@ app.controller('ljubljanaCtrl', function($scope) {
 app.controller('medvodeCtrl', function($scope) {
 	$scope.currentPageURL = "medvode";
 });
+app.controller('noviceCtrl', function($scope) {
+});
 app.directive('navbarDirective', function() {
   return {
     templateUrl: "templates/navbar.html",
     restrict: 'E'
   };
-});
-app.controller('noviceCtrl', function($scope) {
 });
